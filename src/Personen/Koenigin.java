@@ -2,7 +2,13 @@ package Personen;
 
 public class Koenigin extends Person
 {
-    
+
+    /**
+     * Konstruktor für die Koenigin-Klasse.
+     *
+     * @param einkommen Das Einkommen der Königin.
+     * @param Name      Der Name der Königin.
+     */
     public Koenigin(double einkommen, String Name)
     {
         super(einkommen, Name);

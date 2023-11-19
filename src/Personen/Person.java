@@ -1,51 +1,67 @@
 package Personen;
 
-public class Person
-{
+public class Person {
+    // Attribute einer Person
     protected double einkommen;
     protected double abs;
     protected double steuersatz;
     protected String Name;
 
-    public Person(double einkommen, String Name)
-    {
+    /**
+     * Konstruktor für die Person-Klasse.
+     *
+     * @param einkommen Das Einkommen der Person.
+     * @param Name      Der Name der Person.
+     */
+    public Person(double einkommen, String Name) {
         this.einkommen = einkommen;
         this.Name = Name;
-        
+
         abs = 0;
         steuersatz = 0.25;
-        if ( steuer() < 0){
+
+        if (steuer() < 0) {
             abs = steuer() * -1;
         }
-        if (steuer() > einkommen){
+        if (steuer() > einkommen) {
             abs = (steuer() - einkommen) * -1;
         }
     }
-    
-    public double zuVersteuerndesEinkommen(){
+
+    public double zuVersteuerndesEinkommen() {
         return einkommen;
     }
-    
-    public void setSteuersatz(double steuersatz){
+
+    public void setSteuersatz(double steuersatz) {
         this.steuersatz = steuersatz;
     }
-    
-    public double getSteuersatz(){
+
+    public double getSteuersatz() {
         return steuersatz;
     }
-    
-    public double getAbs(){
+
+    public double getAbs() {
         return abs;
     }
-    
-    public double getEinkommen(){return einkommen;}
-    
-    public double steuer(){
+
+    public double getEinkommen() {
+        return einkommen;
+    }
+
+    /**
+     * Berechnet die Steuer für die Person.
+     *
+     * @return Die berechnete Steuer.
+     */
+    public double steuer() {
         return zuVersteuerndesEinkommen() * steuersatz + abs;
     }
-    public String getName(){
+
+    public String getName() {
         return Name;
     }
-    
-    public String getBeruf(){return "Arbeitslos";}
+
+    public String getBeruf() {
+        return "Arbeitslos";
+    }
 }
