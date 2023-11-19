@@ -1,9 +1,9 @@
-import GUI.CustomeFrame;
+import GUI.Index;
 
 public class Main {
     public static void main(String[] args) {
 
-        CustomeFrame gui = new CustomeFrame();
+        Index home = new Index();
 
     }
 }
