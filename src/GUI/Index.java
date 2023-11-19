@@ -12,6 +12,7 @@ public class Index extends CustomeFrame{
 
 
     public Index(){
+        setTitle("Finanzamt - Login");
         initComponents();
         setVisible(true);
     }
