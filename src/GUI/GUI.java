@@ -1,3 +1,5 @@
+package GUI;
+
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -7,12 +9,9 @@ import java.util.*;
 
 public class GUI extends JFrame{
 
-    private Font font;
-    private int width;
-    private int heigth;
-    private final Color FOREGROUND_COLOR;
-    private final Color BACKGROUND_COLOR;
-
+    protected Font font;
+    protected int width;
+    protected int heigth;
 
     public GUI(){
         font = new Font("SansSerif", Font.PLAIN, 20);
@@ -23,29 +22,29 @@ public class GUI extends JFrame{
         int screenWidth = (int) screenSize.getWidth();
         int screenHeight = (int) screenSize.getHeight();
 
-        heigth = (int)Math.round(screenHeight / 1.7);
-        width = (int)Math.round(screenHeight / 1.8);
-        FOREGROUND_COLOR = Color.WHITE;
-        BACKGROUND_COLOR = Color.BLACK;
+        heigth = (int)Math.round(screenHeight / 1.5);
+        width = (int)Math.round(screenWidth / 1.5);
 
-        // GUI-Fenster-Einstellungen
-        setTitle("Finanzamt - Login");
+        // GUI.GUI-Fenster-Einstellungen
+        setTitle("Finanzamt");
         setSize(new Dimension(width, heigth));
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setBackground(Color.BLACK);
+        setBackground(DarkThemeColors.SURFACE_MIXED_100);
 
-        // Initialisieren der GUI-Komponenten
+        // Initialisieren der GUI.GUI-Komponenten
         initComponents();
 
         setLocationRelativeTo(null);
     }
 
 
+    protected void initComponents(){
 
-    public void show(){
+    }
+    public void display(){
         setVisible(true);
     }
-    class ButtonListener implements ActionListener {
+    protected class ButtonListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             System.out.println("Heared you!");
         }

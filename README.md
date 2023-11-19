@@ -32,9 +32,9 @@ Als Schüler der 11. Klasse sind hier einige empfohlene Aufgaben, um Ihr Verstä
 
 3. **Instanzen erstellen:** In der `Main`-Klasse erstellen Sie Instanzen der neuen Klasse `Staff`, rufen Sie die Methoden auf und stellen Sie sicher, dass die Vererbung korrekt funktioniert.
 
-## Hinweis: GUI-Integration (in Arbeit)
+## Hinweis: GUI.GUI-Integration (in Arbeit)
 
-In Zukunft wird ein grafisches Benutzeroberfläche (GUI) hinzugefügt, um die Vererbungskonzepte visuell darzustellen. Schauen Sie regelmäßig vorbei!
+In Zukunft wird ein grafisches Benutzeroberfläche (GUI.GUI) hinzugefügt, um die Vererbungskonzepte visuell darzustellen. Schauen Sie regelmäßig vorbei!
 
 ---
 
