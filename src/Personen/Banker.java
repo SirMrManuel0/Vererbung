@@ -1,3 +1,5 @@
+package Personen;
+
 public class Banker extends Person
 {
     
@@ -10,5 +12,5 @@ public class Banker extends Person
         return zuVersteuerndesEinkommen() * getSteuersatz() + 1000 + getAbs();
     }
     
-    public String getBeruf(){return "Banker";}
+    public String getBeruf(){return "Personen.Banker";}
 }

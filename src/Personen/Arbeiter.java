@@ -1,3 +1,5 @@
+package Personen;
+
 public class Arbeiter extends Person
 {
     
@@ -11,5 +13,5 @@ public class Arbeiter extends Person
         return einkommen - 2400;
     }
     
-    public String getBeruf(){return "Arbeiter";}
+    public String getBeruf(){return "Personen.Arbeiter";}
 }

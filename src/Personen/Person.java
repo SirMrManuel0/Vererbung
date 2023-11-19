@@ -1,3 +1,5 @@
+package Personen;
+
 public class Person
 {
     protected double einkommen;
