@@ -64,4 +64,14 @@ public class Person {
     public String getBeruf() {
         return "Arbeitslos";
     }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + getName() + '\'' +
+                ", beruf='" + getBeruf() + '\'' +
+                ", einkommen=" + einkommen +
+                ", steuer=" + steuer() +
+                '}';
+    }
 }
